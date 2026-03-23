@@ -5,7 +5,14 @@ Personal repository
 
  📖 项目简介
 
-个人练习项目，一个基于 **Unreal Engine 5 C++** 开发的可扩展、数据驱动的物品系统与背包框架。系统实现了物品定义、实例化、装备、消耗、世界掉落及背包管理核心功能，采用“数据与表现分离”的设计模式，深度利用 UE 反射系统、GameplayTag 和资产管理器，提供高复用、易扩展的游戏内物品解决方案。
+个人项目，一个基于 Unreal Engine 5 C++ 开发的可扩展、数据驱动的物品系统与背包框架。系统实现了物品定义、实例化、装备、消耗、世界掉落及背包管理等核心功能，采用 “C++ 定义底层架构，蓝图实现具体逻辑” 的混合开发模式：
+
+C++ 层 提供基类、工厂、反射接口、数据结构和核心流程控制，确保性能与稳定性；
+
+蓝图层 负责具体物品行为、效果组合、UI 交互与调试配置。
+
+项目深度利用 UE 反射系统、GameplayTag 和资产管理器，遵循 “数据与表现分离” 的设计原则，形成了一套高复用、易扩展、编辑器友好的游戏内物品解决方案。
+完整项目运行文件获取：https://pan.quark.cn/s/6b6ef6daaa1a
 
 
 
@@ -72,16 +79,17 @@ UConsumableItemDefinition         UConsumableItemInstance
   - `Core`, `CoreUObject`, `Engine`
   - `GameplayTags`（必须启用）
   - `UMG`（可选，用于 UI 显示）
+  - UnrealLink插件
 
 ---
 
 🚀 快速开始
 
  1. 环境要求
-- Windows 11 或 macOS
+- Windows 11
 - Visual Studio 2022（Windows）或 JetBrains Rider 2025（首选）
 - Unreal Engine 5.3 或更高版本
-- .Net 8.0
+- .Net 8.0+,不推荐9.0+
 - 
 
 
